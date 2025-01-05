@@ -45,7 +45,7 @@ small {
   border-color: #242424;
   border-radius: 4px;
   border-style: solid;
-  font-size: 18pt;
+  font-size: 20pt;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,17 +56,25 @@ small {
 .bingo-button.done {
   filter: none;
   background-color: #555555;
-  border-color: #555555;
+  border-color: #777777;
+}
+.bingo-button.bingo {
+  background-color: #007388;
+  border-color: #23cae7;
 }
 
 .bingo-button:hover {
+  filter: none;
   background-color: #555555;
   border-color: #555555;
-  filter: none;
 }
 .bingo-button.done:hover {
-  background-color: #424242;
-  border-color: #424242;
+  background-color: #777777;
+  border-color: #777777;
+}
+.bingo-button.bingo:hover {
+  background-color: #00a6c4;
+  border-color: #23cae7;
 }
 
 /* ------------- Card Modal CSS ------------- */
@@ -106,6 +114,8 @@ small {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 200ms ease-in-out;
+  max-height: 80vh;
+  overflow: scroll;
 }
 
 .card h2 {
